@@ -1,0 +1,16 @@
+<script>
+    let star="";
+    let satır=10;
+    let sutun=20;
+   for(let i=1; i<=satır; i++){
+       for(k=1; k<=sutun; k++){
+       if(k<=sutun/2-i ||k>=sutun/2+i){
+               star+=`<span style="color:white">*</span>`;
+           }else{
+               star+="*";
+           }
+       }
+       star += "<br>";/* br alt satıra geçer. */
+   }
+    document.querySelector("#matris").innerHTML = star;
+</script>
